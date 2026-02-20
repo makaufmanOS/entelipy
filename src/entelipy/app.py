@@ -1,3 +1,8 @@
+"""
+app.py
+
+Implements the `Textual` application, including layout, key bindings, styling, and startup behavior.
+"""
 from textual.binding import Binding
 from textual.containers import Vertical
 from textual.app import App, ComposeResult
