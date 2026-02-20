@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "entelipy"
+version = "0.0.1"
+description = "TUI tools for Delta Controls and enteliWEB."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    { name = "Matt Kaufman" }
+]
+dependencies = [
+    "textual>=0.50.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/makaufmanOS/entelipy"
+Issues = "https://github.com/makaufmanOS/entelipy/issues"
+
+[project.scripts]
+entelipy = "entelipy.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
